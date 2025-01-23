@@ -1,0 +1,131 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,#013648 1%,#075c6e 100%);
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    height: 67px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+header img{
+    margin-left: 25px ;
+    margin-top: 15px;
+}
+
+header #textos a{
+    font-family: sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin: 20px;
+    transition: 0.4s;
+}
+
+header #textos a:hover{
+    color: #fa4616;
+}
+
+
+#textos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+}
+
+.textwidget{
+    width: 101px;
+    height: 36px;
+    background-color:#fa4616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+
+header .textwidget:hover a{
+    color: white !important;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+main h2{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 43px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+#filhodaputa{
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 50px;
+    height: 57px;
+    background-image: url(cantinho.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main #filhodaputa2{
+    background-image: url(otocantio.svg);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: -49px;
+    bottom: -615px;
+}
+
+main #filhodaputa3{
+    background-image: url(azul.svg);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    bottom: -615px;
+}
+
+main #textobaixo{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    width: 590px;
+    font-size: 20;
+    left: 40px;
+    top: 290px;
+    position: absolute;
+
+
+}
+
