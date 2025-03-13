@@ -1,0 +1,36 @@
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(208, 208, 208);
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .content{
+    position: relative;
+    width:39.682539682539684vw;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+header .content .skills{
+    position: relative;
+    display: flex;
+    border-radius: 0.634vw;
+    overflow: visible;
+    transform: 0.5s;
+    min-width: 46vw;
+}
+
+header .content .skills
