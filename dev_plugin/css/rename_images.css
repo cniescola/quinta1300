@@ -11,9 +11,10 @@ header{
     height: 100%;
     background-color: #2b343b;
     transition: 0.5s;
-    position: relative;
+    position: absolute;
     overflow-x: hidden;
     padding: 100px;
+    z-index: 1;
 }
 
 header:hover{
@@ -50,4 +51,35 @@ header nav ul li{
     font-family: sans-serif;
     white-space: nowrap;
     font-size: 20px;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+}
+
+main .faixa{
+    height: 450px;
+    width: 100%;
+    background-color: #4187f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main .faixa .texto{
+    position: absolute;
+    color: #d0e2ff;
+    font-family: sans-serif;
+    font-size: 45px;
+    left: 250px;
+    font-weight: bold;
+    text-shadow: 1.5px 1.5px 5px black;
 }
