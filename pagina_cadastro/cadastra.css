@@ -1,0 +1,47 @@
+@property --blade{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border: 0;
+}
+
+.box{
+    position: relative;
+    min-height: 600px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: repeating-conic-gradient(from var(--blade), #7700ff 0%, #7700ff 10%, transparent 10%, transparent 50% );
+    animation: roda 6s linear infinite;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #222;
+}
+
+@keyframes roda{
+    0%{
+        --blade:0deg
+    }
+
+    100%{
+        --blade:360deg
+    }
+
+}
