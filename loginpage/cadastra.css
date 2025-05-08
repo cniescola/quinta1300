@@ -1,0 +1,41 @@
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@property --blade{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+.box{
+    min-height: 600px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: repeating-conic-gradient(from var(--blade),#e60681 0%, #e60681 10%,transparent 10%,transparent 50%);
+    animation: roda 6s linear infinite; 
+    position:relative;
+}
+
+.box::before{
+    content: '';
+    position:absolute;
+    inset:2px;
+    background-color:#222;
+}
+
+@keyframes roda{
+    0%{
+        --blade: 0deg
+    }
+    100%{
+        --blade: 360deg
+    }
+}
