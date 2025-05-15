@@ -16,6 +16,10 @@ body{
     border: 0;
 }
 
+:root{
+    --b: #7700ff;
+}
+
 .box{
     position: relative;
     min-height: 500px;
@@ -24,7 +28,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: repeating-conic-gradient(from var(--blade), #7700ff 0%, #7700ff 10%, transparent 10%, transparent 50% );
+    background: repeating-conic-gradient(from var(--blade), var(--b) 0%, var(--b) 10%, transparent 10%, transparent 50% );
     animation: roda 6s linear infinite;
 }
 
@@ -32,7 +36,7 @@ body{
     content: '';
     inset: 0;
     position: absolute;
-    background: repeating-conic-gradient(from var(--blade), #7700ff 0%, #7700ff 10%, transparent 10%, transparent 50% );
+    background: repeating-conic-gradient(from var(--blade), var(--b) 0%, var(--b) 10%, transparent 10%, transparent 50% );
     animation: roda 6s linear infinite;
     animation-delay: 1.5s;
 }
@@ -61,7 +65,7 @@ body{
     content: '';
     inset: 0;
     position: absolute;
-    background: repeating-conic-gradient(from var(--blade), #7700ff 0%, #7700ff 10%, transparent 10%, transparent 50% );
+    background: repeating-conic-gradient(from var(--blade), var(--b) 0%, var(--b) 10%, transparent 10%, transparent 50% );
     animation: roda 6s linear infinite;
 }
 
