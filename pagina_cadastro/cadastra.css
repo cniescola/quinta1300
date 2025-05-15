@@ -18,7 +18,7 @@ body{
 
 .box{
     position: relative;
-    min-height: 600px;
+    min-height: 500px;
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -85,8 +85,18 @@ body{
 .inputbox input::placeholder,
 .inputbox input{
     color: rgba(255, 255, 255, 0.507);
-    padding-left: 5px;
+    padding-left: 10px;
+}
 
+.box #titulo h2{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.box #titulo{
+    z-index: 10;
 }
 
 @keyframes roda{
