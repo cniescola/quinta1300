@@ -50,6 +50,17 @@ body{
     z-index: 1;
 }
 
+#cadastro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom : 50px;
+}
+
 .inputbox{
     width: 250px;
     height: 44px;
