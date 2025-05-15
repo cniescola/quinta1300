@@ -2,6 +2,10 @@
     padding:0;
     margin:0;
 }
+
+:root{
+    --b: rgb(7, 128, 43);
+}
 body{
     min-height: 100vh;
     width: 100%;
@@ -17,20 +21,20 @@ body{
 }
 
 .box{
-    min-height: 600px;
+    min-height: 500px;
     width: 400px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: repeating-conic-gradient(from var(--blade),#e60681 0%, #e60681 10%,transparent 10%,transparent 50%);
+    background: repeating-conic-gradient(from var(--blade),var(--b) 0%, var(--b) 10%,transparent 10%,transparent 50%);
     animation: roda 6s linear infinite; 
     position:relative;
 }
 
 .box::before{
     content:'';
-    background: repeating-conic-gradient(from var(--blade),#e60681 0%, #e60681 10%,transparent 10%,transparent 50%);
+    background: repeating-conic-gradient(from var(--blade),var(--b) 0%, var(--b) 10%,transparent 10%,transparent 50%);
     position:absolute;
     inset: 0px;
     animation: roda 6s linear infinite; 
@@ -63,7 +67,7 @@ body{
 
 .box .inputbox::before{
     content: '';
-    background: repeating-conic-gradient(from var(--blade),#e60681 0%, #e60681 10%,transparent 10%,transparent 50%);
+    background: repeating-conic-gradient(from var(--blade),var(--b) 0%, var(--b) 10%,transparent 10%,transparent 50%);
     position:absolute;
     inset: 0px;
     animation: roda 6s linear infinite; 
@@ -91,7 +95,16 @@ body{
     color:#ffffff6b;
 }
 
+.box #titulo h2{
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+}
 
+.box #titulo{
+    margin-bottom:50px;
+}
 
 @keyframes roda{
     0%{
