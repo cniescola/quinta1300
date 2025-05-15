@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
     min-height: 100vh;
     width: 100%;
@@ -6,6 +11,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 @property --blade{
     syntax: '<angle>';
     inherits: false;
@@ -26,10 +32,69 @@ body{
 
 .box::before{
     content: '';
+    background: repeating-conic-gradient(from var(--blade),#e60681 0%, #e60681 10%,transparent 10%,transparent 50%);
+    animation: roda 6s linear infinite; 
+    position:absolute;
+    animation-delay: 1.5s;
+    inset: 0;
+}
+
+.box::after{
+    content: '';
     position:absolute;
     inset:2px;
     background-color:#222;
 }
+
+#he{
+    z-index: 1;
+}
+
+.inputbox{
+    width: 250px;
+    height: 44px;
+    background-color: white;
+    margin-bottom:30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: repeating-conic-gradient(from var(--blade),#e60681 0%, #e60681 10%,transparent 10%,transparent 50%);
+    animation: roda 6s linear infinite; 
+    box-shadow: 0px 0px 4px #000000ab;
+}
+
+.inputbox::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+
+.inputbox::after{
+    content: '';
+    position: absolute;
+    background-color: #222;
+    inset: 2px;
+}
+
+.inputbox input{
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    height: 44px;
+    background:transparent;
+    border:transparent;
+    outline: none;
+}
+.inputbox input::placeholder
+,.box .inputbox input{
+    padding-left: 10px;
+    background: transparent;
+    border: transparent;
+    color: #ffffff6b;
+}
+
 
 @keyframes roda{
     0%{
