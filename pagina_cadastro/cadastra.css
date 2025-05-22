@@ -30,6 +30,7 @@ body{
     align-items: center;
     background: repeating-conic-gradient(from var(--blade), var(--b) 0%, var(--b) 10%, transparent 10%, transparent 50% );
     animation: roda 6s linear infinite;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.39);
 }
 
 .box::before{
@@ -101,6 +102,20 @@ body{
 
 .box #titulo{
     z-index: 10;
+}
+
+.inputbox:last-child::before{
+    background: repeating-conic-gradient(from var(--blade), rgb(51, 88, 255) 0%, rgb(255, 0, 191) 10%, transparent 10%, transparent 50% );
+}
+
+#cadas{
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    padding: 0;
+}
+
+#cadas:hover{
+    background-color: #7700ff79;
 }
 
 @keyframes roda{
