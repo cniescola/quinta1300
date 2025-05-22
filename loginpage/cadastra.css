@@ -106,6 +106,15 @@ body{
     color: #ffffff6b;
 }
 
+#cadas{
+    cursor: pointer;
+    padding: 0;
+    transition: 0.5s;
+}
+
+#cadas:hover{
+     background: repeating-conic-gradient(from var(--blade),#9f06e6 0%, #9f06e6 10%,transparent 10%,transparent 50%);
+}
 
 @keyframes roda{
     0%{
