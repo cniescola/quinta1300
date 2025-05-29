@@ -26,8 +26,8 @@
             <div class="inputbox">
                 <input type="password" placeholder="Repita sua senha" name="rsenha">
             </div>
-            <div class="inputbox" id="cadas">
-                <input type="submit" value="Cadastrar">
+            <div class="inputbox" id="anini">
+                <input type="submit" value="Cadastrar" id="cadas">
             </div>
                 
             <?php

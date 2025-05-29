@@ -108,13 +108,17 @@ body{
 
 #cadas{
     cursor: pointer;
-    padding: 0;
+    margin-left: 0px;
+    padding-left: 0px;
     transition: 0.5s;
 }
-
-#cadas:hover{
+#anini{
+    transition: 0.5s;
+}
+#anini:hover{
      background: repeating-conic-gradient(from var(--blade),#9f06e6 0%, #9f06e6 10%,transparent 10%,transparent 50%);
 }
+
 
 @keyframes roda{
     0%{
