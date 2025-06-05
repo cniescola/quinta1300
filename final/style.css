@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;  
+}
+
+#verde{
+    height:29%;
+    width: 100%;
+    background-color:#3cc88f;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+#verde #esquerda{
+    width: 50%;
+    height: 100%;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#verde #direita{
+    width: 50%;
+    height: 100%;
+    border: solid 1px black;
+}
+
+header #verde #esquerda > div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons{
+ margin-right: 5px;
+}
+.icons img{
+    filter: invert();
+}
+
+.txt{
+    color: white;
+}
