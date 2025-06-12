@@ -17,6 +17,11 @@ header{
     flex-direction: column;  
 }
 
+nav{
+    height: 100%;
+    width: 100%;
+}
+
 #verde{
     height:29%;
     width: 100%;
@@ -29,7 +34,6 @@ header{
 #verde #esquerda{
     width: 50%;
     height: 100%;
-    border: solid 1px black;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -39,7 +43,6 @@ header{
 #verde #direita{
     width: 50%;
     height: 100%;
-    border: solid 1px black;
 }
 
 header #verde #esquerda > div{
@@ -59,4 +62,37 @@ header #verde #esquerda > div{
 
 .txt{
     color: white;
+}
+
+#direita{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 0 80px;
+}
+
+#direita > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#direita > div .icons2{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.icons2 img{
+    filter: invert();
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.icons2 img:hover{
+    filter: none;
 }
