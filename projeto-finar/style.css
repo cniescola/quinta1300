@@ -25,14 +25,16 @@ header #nav1{
 header #esquerda{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+
 }
 
 header #nav1 nav{
     height: 100%;
     display: flex;
     flex-direction: row;
+    padding: 0 80px !important;
 }
 
 header #nav1 nav > div{
@@ -46,7 +48,7 @@ header #esquerda div{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 15px;
+    margin-right: 15px;
     color: white;
     filter: none;
 }
@@ -55,3 +57,28 @@ header #esquerda div{
 header #esquerda .icon img{
     filter: invert();
 }
+
+
+#direita .redessociais{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: row;
+
+}
+
+#direita .redessociais .img{
+    margin-left: 15px;
+}
+
+#direita .redessociais .img img{
+    filter: invert();
+    transition: 0.2s;
+}
+
+#direita .redessociais .img img:hover{
+    filter: none;
+}
+
+
