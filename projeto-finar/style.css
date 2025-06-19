@@ -6,6 +6,7 @@
 body{
     height: 100vh;
     width: 100%;
+    background-color: black;
 }
 
 header{
@@ -48,7 +49,7 @@ header #esquerda div{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-right: 15px;
+    margin-right: 12px;
     color: white;
     filter: none;
 }
@@ -81,4 +82,69 @@ header #esquerda .icon img{
     filter: none;
 }
 
+#nav2{
+    width: 100%;
+    height: 106px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    background-color: white;
+    padding-right: 83px;
+    padding-left: 83px;
+}
 
+#nav2 .logo{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#nav2 .caixabott{
+    height: 100%;   
+    background-color: white !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav2 li a{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.donate-btn-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 47px;
+    width: 150px;
+}
+
+.donate-btn-header .dtbtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #3cc88f;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+
+.donate-btn-header .dtbtn:hover{
+    background-color: #005B27;
+}
